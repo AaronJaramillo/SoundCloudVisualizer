@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^svapp/', include('svapp.urls')),
+    url(r'^svapp/simpleform.asp', include('svapp.urls'))
 ]
