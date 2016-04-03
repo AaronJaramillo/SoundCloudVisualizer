@@ -11,5 +11,5 @@ def fireURL(request):
 	return render(request, 'svapp/simpleform.asp');
 
 def extract(request):
-
-	SCVis.main(request);
+	SCVis.main("https://soundcloud.com/calvinharris/how-deep-is-your-love-calvin");
+	return render(request, 'svapp/home.html');
