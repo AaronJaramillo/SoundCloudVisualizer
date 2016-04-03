@@ -28,7 +28,7 @@ for i in range (0, rows*columns):
     
     step = 20000/(rows*columns)
 
-    bpy.ops.graph.sound_bake(filepath="/Users/AaronJaramillo/Music/Imported Music/Kanye West - 808s & Heartbreak (2008)/05 Love Lockdown.mp3", low=(i*step), high=(i*step)+step)
+    bpy.ops.graph.sound_bake(filepath="/Users/AaronJaramillo/Desktop/Visualizer/TEMPSONG.mp3", low=(i*step), high=(i*step)+step)
     
     bpy.context.active_object.animation_data.action.fcurves[2].lock = True
     
