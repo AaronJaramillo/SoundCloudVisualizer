@@ -11,7 +11,7 @@ import traceback
 
 def fetch(url):
     # create directory
-    savedir = "directory"
+    savedir = "visualizer/media/"
     if not os.path.exists(savedir):
         os.makedirs(savedir)
 
@@ -29,7 +29,7 @@ def fetch(url):
 
             ydl.download([url])
 
-            savedir = '/Downloads/'
+            savedir = 'visualizer/media/'
 
             print("Downloading...")
 
@@ -44,7 +44,7 @@ def fetch(url):
 
                 #filename =  result['title'] + ".mp3"
 
-                filename = "TEMPSONG.mp3"
+                filename = "visualizer/media/TEMPSONG.mp3"
 
                 os.rename(result['id'], filename)
                 print("Downloaded and converted successfully!")
